@@ -6,9 +6,9 @@ export default function Navbar(props) {
       <div className="flex items-center sm:flex-col md:flex-col">
         <div className="p-2 text-2xl font-bold"><Link to='/'>{props.title}</Link></div>
         <ul className="flex item-center">
-          <li className="p-3"> <NavLink to="/TextUtils">Home</NavLink></li>
-          <li className="p-3"><NavLink to="/TextUtils/about">About</NavLink></li>
-          <li className="p-3"><NavLink to="/TextUtils/contact">Contact</NavLink></li>
+          <li className="p-3"> <NavLink to="/">Home</NavLink></li>
+          <li className="p-3"><NavLink to="/about">About</NavLink></li>
+          <li className="p-3"><NavLink to="/contact">Contact</NavLink></li>
         </ul>
       </div>
       <div className="flex sm:mb-2 sm:relative space-x-2 items-center">
