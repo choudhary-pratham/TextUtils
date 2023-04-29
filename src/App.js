@@ -1,7 +1,6 @@
 import './App.css';
 import Navbar from "./components/Navbar";
 import Textformat from "./components/Textformat";
-import About from "./components/About";
 import Alert from "./components/Alert";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
@@ -40,8 +39,7 @@ function App() {
         <Alert alert={alert}/>
         <Routes>
             <Route path="/" element={<Textformat mode = {mode} showAlert = {showAlert}/>}/>
-            <Route path="/about" element={<About mode={mode}/>}/>
-            <Route path="/contact" element={<Contact mode={mode}/>}/>
+            <Route path="/contact" element={<Contact mode={mode} showAlert = {showAlert}/>}/>
             <Route path="*" element={<Error/>}/>
         </Routes>
     </>
